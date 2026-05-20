@@ -27,8 +27,6 @@
 2. Установите расширение **Live Server**.
 3. Правый клик по `index.html` → **Open with Live Server**.
 
-Или откройте `index.html` двойным щелчком в браузере.
-
 ## Контакты
 
 - Telegram: [@natashakalash](https://t.me/natashakalash)
