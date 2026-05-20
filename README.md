@@ -4,13 +4,7 @@
 
 ## Сайт онлайн
 
-После публикации на GitHub Pages ссылка будет здесь:
-
-**https://ВАШ-НИКНАМЕ.github.io/ИМЯ-РЕПОЗИТОРИЯ/**
-
-Пример: если ник `natashakalash` и репозиторий `portfolio`, адрес:
-
-`https://natashakalash.github.io/portfolio/`
+**https://natashakalash-tech.github.io/portfolio/**
 
 ## Технологии
 

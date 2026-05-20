@@ -31,14 +31,21 @@ body {
   line-height: 1.6;
   color: var(--text);
   background-color: #0c0e16;
-  /* Фоновое изображение — файл background.jpeg в той же папке */
+  min-height: 100vh;
+}
+
+/* Фон на отдельном слое — на телефоне не «уезжает» к верху картинки */
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background-image:
     linear-gradient(var(--bg-overlay), var(--bg-overlay)),
     url("background.jpeg");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
+  background-position: center center;
 }
 
 a {
@@ -451,8 +458,10 @@ img {
     border-bottom: none;
   }
 
-  body {
-    background-attachment: scroll;
+  /* На мобильных: кадр по центру (не верх картинки) */
+  .site-bg {
+    background-size: cover;
+    background-position: center center;
   }
 }
 
