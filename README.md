@@ -4,13 +4,9 @@
 
 ## Сайт онлайн
 
-После публикации на GitHub Pages ссылка будет здесь:
+ссылка здесь:
 
-**https://ВАШ-НИКНАМЕ.github.io/ИМЯ-РЕПОЗИТОРИЯ/**
-
-Пример: если ник `natashakalash` и репозиторий `portfolio`, адрес:
-
-`https://natashakalash.github.io/portfolio/`
+**https://natashakalash-tech.github.io/portfolio/**
 
 ## Технологии
 
@@ -27,13 +23,6 @@
 | `script.js` | меню на телефоне |
 | `background.jpeg` | фоновое изображение |
 
-## Локальный запуск
-
-1. Откройте папку в Cursor или VS Code.
-2. Установите расширение **Live Server**.
-3. Правый клик по `index.html` → **Open with Live Server**.
-
-Или откройте `index.html` двойным щелчком в браузере.
 
 ## Контакты
 
