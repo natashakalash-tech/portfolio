@@ -34,18 +34,28 @@ body {
   min-height: 100vh;
 }
 
-/* Фон на отдельном слое — на телефоне не «уезжает» к верху картинки */
+/* Фон на отдельном слое — на телефоне точнее сдвигается кадр */
 .site-bg {
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-image:
-    linear-gradient(var(--bg-overlay), var(--bg-overlay)),
-    url("background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  overflow: hidden;
+}
+
+.site-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--bg-overlay);
+}
+
+.site-bg__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 a {
@@ -458,10 +468,12 @@ img {
     border-bottom: none;
   }
 
-  /* На мобильных: кадр по центру (не верх картинки) */
-  .site-bg {
-    background-size: cover;
-    background-position: center center;
+  /*
+   * На телефоне: в кадре зона с цифрами (середина фото), не макушка.
+   * Если всё ещё высоко/низко — меняйте второе число (50–70).
+   */
+  .site-bg__img {
+    object-position: center 58%;
   }
 }
 
