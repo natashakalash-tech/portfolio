@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Наталья Кэ — начинающий вайб-кодер. Telegram-боты, вёрстка, API, AI и развёртывание приложений.">
+  <title>Наталья Кэ — Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== НАВИГАЦИЯ (можно менять пункты) ========== -->
+  <header class="header">
+    <a class="logo" href="#hero">Портфолио</a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#about">Обо мне</a>
+      <a href="#projects">Проекты</a>
+      <a href="#skills">Навыки</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- ========== 1. ИМЯ И КОРОТКОЕ ОПИСАНИЕ ========== -->
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <p class="hero__label">Привет, я</p>
+        <h1 class="hero__title">Наталья Кэ</h1>
+        <p class="hero__text">
+          Начинающий вайб-кодер: собираю ботов, страницы и приложения с API, базами данных и AI — быстро и с фокусом на результат.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">Смотреть проекты</a>
+          <a class="btn btn--ghost" href="#contacts">Связаться</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. ЧЕМ ЗАНИМАЮСЬ И ЧТО УМЕЮ ========== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">Обо мне</h2>
+        <p class="section__lead">
+          Начинающий вайб-кодер: соединяю идеи, готовые инструменты и AI, чтобы запускать рабочие решения —
+          от Telegram-ботов до небольших веб-страниц и серверных приложений.
+        </p>
+
+        <div class="cards cards--3">
+          <article class="card">
+            <h3 class="card__title">Чем занимаюсь</h3>
+            <p class="card__text">Создаю Telegram-ботов, верстаю лендинги на HTML и CSS, собираю приложения с подключением внешних сервисов.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Что умею</h3>
+            <p class="card__text">Интеграция API, работа с БД на начальном уровне, развёртывание серверных приложений и встраивание AI/LLM-функций.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Подход</h3>
+            <p class="card__text">Вайб-кодинг: быстрые прототипы, проверка гипотез и доведение проекта до рабочего состояния без лишней сложности.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. ПРОЕКТЫ (ЗАГЛУШКИ — замените на свои) ========== -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Проекты и учебные работы</h2>
+        <p class="section__lead">
+          Учебные и pet-проекты. Этот лендинг — одна из работ; остальные карточки можно заменить, когда появятся ссылки на GitHub.
+        </p>
+
+        <div class="cards cards--projects">
+
+          <article class="project">
+            <div class="project__placeholder" aria-hidden="true">🖼</div>
+            <div class="project__body">
+              <h3 class="project__title">Портфолио-лендинг</h3>
+              <p class="project__text">Учебный одностраничный сайт: HTML, CSS, адаптивная вёрстка, фоновое изображение.</p>
+              <!-- ЗАМЕНИТЕ href: ссылка на GitHub, CodePen или файл -->
+              <a class="project__link" href="#" target="_blank" rel="noopener noreferrer">Открыть проект →</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__placeholder" aria-hidden="true">🖼</div>
+            <div class="project__body">
+              <h3 class="project__title">Учебная работа 2</h3>
+              <p class="project__text">Описание задания и что получилось в итоге.</p>
+              <a class="project__link" href="#" target="_blank" rel="noopener noreferrer">Открыть проект →</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project__placeholder" aria-hidden="true">🖼</div>
+            <div class="project__body">
+              <h3 class="project__title">Проект в разработке</h3>
+              <p class="project__text">Заглушка — добавьте сюда следующий проект, когда будет готов.</p>
+              <span class="project__badge">Скоро</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. НАВЫКИ ========== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section__title">Навыки</h2>
+
+        <div class="skills-grid">
+          <div class="skills-block">
+            <h3 class="skills-block__title">Уже умею</h3>
+            <ul class="tags">
+              <li>Telegram-боты</li>
+              <li>HTML и CSS</li>
+              <li>Базовая разработка приложений</li>
+              <li>Интеграция API</li>
+              <li>Внешние сервисы</li>
+              <li>Базы данных (начальный уровень)</li>
+              <li>Развёртывание приложений</li>
+              <li>AI / LLM</li>
+            </ul>
+          </div>
+
+          <div class="skills-block">
+            <h3 class="skills-block__title">В процессе изучения</h3>
+            <ul class="tags tags--progress">
+              <li>Углубление в backend</li>
+              <li>Тестирование и отладка</li>
+              <li>GitHub и публикация проектов</li>
+              <li>Оптимизация архитектуры ботов</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. КОНТАКТЫ И ССЫЛКИ ========== -->
+    <section id="contacts" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Контакты</h2>
+        <p class="section__lead">
+          Буду рада обратной связи по проектам и сотрудничеству — напишите в Telegram или на почту.
+        </p>
+
+        <ul class="contacts">
+          <li>
+            <a href="https://t.me/natashakalash" target="_blank" rel="noopener noreferrer">
+              <span class="contacts__icon">✈</span>
+              @natashakalash
+            </a>
+          </li>
+          <li>
+            <a href="mailto:panja@rambler.ru">
+              <span class="contacts__icon">✉</span>
+              panja@rambler.ru
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Наталья Кэ. Учебный проект — портфолио.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
