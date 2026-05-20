@@ -4,6 +4,8 @@
 
 ## Сайт онлайн
 
+ссылка здесь:
+
 **https://natashakalash-tech.github.io/portfolio/**
 
 ## Технологии
@@ -20,12 +22,6 @@
 | `style.css` | стили и яркость фона |
 | `script.js` | меню на телефоне |
 | `background.jpeg` | фоновое изображение |
-
-## Локальный запуск
-
-1. Откройте папку в Cursor или VS Code.
-2. Установите расширение **Live Server**.
-3. Правый клик по `index.html` → **Open with Live Server**.
 
 ## Контакты
 
